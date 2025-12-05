@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    char a[10];
+    int age;
+    float f,tp,d;
+    printf("Enter  Name:age:distance");
+    scanf("%s",&a);
+    scanf("%d",&age);
+    scanf("%f",&d);
+     tp=d*3;
+    if(age<5)
+    f=0;
+    else if(age>60)
+    f=tp*0.5;
+    else
+    f=tp;
+
+printf("passenger name: %s\n",a);
+printf("age:%d\n",age);
+printf("distance:%.2f\n",d);
+printf("Ticket price%.2f\n",f);
+    return 0;
+}
